@@ -1,0 +1,33 @@
+{
+  "name": "ai-cover-letter-generator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An AI-powered Cover Letter Generator using HTML, CSS, JavaScript, and Google Gemini API.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "AI",
+    "Cover Letter",
+    "Gemini",
+    "Google Gemini",
+    "JavaScript",
+    "Vite",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Shivani Sirohi",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

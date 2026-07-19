@@ -1,0 +1,300 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Cover Letter Generator</title>
+
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            AI Cover Letter
+
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#generator">Generator</a></li>
+            <li><a href="#about">About</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+
+            Generate Professional Cover Letters with AI
+
+        </h1>
+
+        <p>
+
+            Instantly create personalized, ATS-friendly cover letters using Artificial Intelligence.
+
+        </p>
+
+        <a href="#generator" class="hero-btn">
+
+            Get Started
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= GENERATOR ================= -->
+
+<section class="generator" id="generator">
+
+    <div class="container">
+
+        <h2>
+
+            AI Cover Letter Generator
+
+        </h2>
+
+        <p>
+
+            Fill in your details and generate a professional cover letter.
+
+        </p>
+
+        <form id="coverForm">
+
+            <div class="input-group">
+
+                <label for="name">
+
+                    Candidate Name
+
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="role">
+
+                    Job Role
+
+                </label>
+
+                <input
+                    type="text"
+                    id="role"
+                    placeholder="Frontend Developer">
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="company">
+
+                    Target Company
+
+                </label>
+
+                <input
+                    type="text"
+                    id="company"
+                    placeholder="Google">
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="skills">
+
+                    Key Skills
+
+                </label>
+
+                <textarea
+                    id="skills"
+                    rows="3"
+                    placeholder="HTML, CSS, JavaScript, React"></textarea>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="jobDescription">
+
+                    Job Description
+
+                </label>
+
+                <textarea
+                    id="jobDescription"
+                    rows="5"
+                    placeholder="Paste the job description here..."></textarea>
+
+            </div>
+
+            <!-- Phase 3 -->
+
+            <div class="input-group">
+
+                <label for="resume">
+
+                    Upload Resume (PDF)
+
+                </label>
+
+                <input
+                    type="file"
+                    id="resume"
+                    accept=".pdf">
+
+            </div>
+
+            <button
+                type="submit"
+                id="generateBtn">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                Generate Cover Letter
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= LOADING ================= -->
+
+<section
+    class="loading hidden"
+    id="loading">
+
+    <div class="loader"></div>
+
+    <p>
+
+        Generating AI Cover Letter...
+
+    </p>
+
+</section>
+
+<!-- ================= OUTPUT ================= -->
+
+<section class="output">
+
+    <div class="output-card">
+
+        <div class="output-header">
+
+            <h2>
+
+                Generated Cover Letter
+
+            </h2>
+<p>Words: <span id="wordCount">0</span></p>
+           <div class="output-buttons">
+
+    <button id="copyBtn">
+
+        <i class="fa-solid fa-copy"></i>
+
+        Copy
+
+    </button>
+
+    <button id="downloadBtn">
+
+        <i class="fa-solid fa-download"></i>
+
+        Download
+
+    </button>
+
+</div>
+
+        </div>
+
+       <pre id="coverLetter">
+Your generated cover letter will appear here...
+</pre>
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <h2>
+
+        About This Project
+
+    </h2>
+
+    <p>
+
+        AI Cover Letter Generator is a SaaS-style web application built using HTML, CSS, JavaScript, and Google Gemini AI. It generates professional, personalized cover letters based on your skills, job role, company, and resume.
+
+    </p>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 AI Cover Letter Generator | Powered by Google Gemini AI
+
+    </p>
+
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
