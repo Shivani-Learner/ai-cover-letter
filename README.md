@@ -53,7 +53,7 @@ AI-Cover-Letter-Generator/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/username/AI-Cover-Letter-Generator.git
+git clone https://github.com/Shivani-Learner/ai-cover-letter.git
 ```
 
 ### 2. Open the Project
